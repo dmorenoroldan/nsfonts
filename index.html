@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>NSFonts - NoSoloSoftware</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+  <form id="form">
+    <div>
+      <label for="escala">Escala</label>
+      <select id="escala">
+        <option value="1.146" selected>1.146</option>
+        <option value="1.200">1.200</option>
+        <option value="1.250">1.250</option>
+        <option value="1.333">1.333</option>
+        <option value="1.414">1.414</option>
+        <option value="1.500">1.500</option>
+        <option value="1.618">1.618 (Golden Ratio)</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="fuente">Fuente</label>
+      <select id="fuente">
+        <option value="Lato" selected>Lato</option>
+        <option value="Roboto">Roboto</option>
+        <option value="Raleway">Raleway</option>
+        <option value="Open Sans">Open Sans</option>
+        <option value="Ubuntu">Ubuntu</option>
+        <option value="Rubik">Rubik</option>
+        <option value="Montserrat">Montserrat</option>
+        <option value="Roboto Condensed">Roboto Condensed</option>
+        <option value="Poppins">Poppins</option>
+        <option value="Nunito">Nunito</option>
+        <option value="Work Sans">Work Sans</option>
+        <option value="Quicksand">Quicksand</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="fontsize">Tamaño fuente</label>
+      <input id="fontsize" type="text" value="16" />
+    </div>
+
+    <div>
+      <button id="calc" type="button">Calcular</button>
+    </div>
+  </form>
+
+  <div id="resultado"></div>
+  <div class="info">
+    <h2>Información</h2>
+    Establece los tamaños de texto de tu aplicación desde aquí. A maquetación tendrás que especificarle la escala que has usado, y el tamaño del cuerpo de texto. En Sketch debes copiar el valor en píxeles de cada tamaño.
+  </div>
+</main>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://freginold.github.io/fontSwitcher/fontSwitcher.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

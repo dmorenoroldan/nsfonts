@@ -1,0 +1,151 @@
+/* PRINCIPAL */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+  background:#f3f4f5;
+  font-family: 'Lato', sans-serif;
+  color:#797979;
+  font-size:1rem;
+  line-height:1.5;
+  padding:48px 0;
+}
+
+main {
+  background:#fff;
+  width:100%;
+  max-width:1200px;
+  margin:0 auto;
+  padding:32px 0;
+  border-radius:4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+
+/* FORM */
+form {
+  padding:4px 24px;
+  display:flex;
+  margin-bottom:24px;
+}
+
+form > div {
+  flex: 3;
+  padding: 0 8px;
+  align-self: flex-end;
+}
+
+form > div:last-of-type { flex:1; }
+
+form input, form select {
+  border-radius:4px;
+  background:#fff;
+  border:#DBDFE1 1px solid;
+  height:36px;
+  line-height:36px;
+  padding:0 16px;
+  font-size:1rem;
+  display:block;
+  width:100%;
+  outline:0;
+  transition:all .1s;
+  color:#6B7174;
+}
+
+form input:hover, form select:hover {
+  border-color:#C4C9CD;
+}
+
+form input:focus,  form select:focus {
+  border-color:#2D2E2F;
+  color:#2D2E2F;
+}
+
+form button {
+  display:block;
+  height:36px;
+  line-height:36px;
+  color:#fff;
+  background:#EF3340;
+  padding:0 16px;
+  font-size:1rem;
+  border:0;
+  outline:0;
+  border-radius:4px;
+  transition:all .3s;
+}
+
+form button:hover {
+  background:#2D2E2F;
+  cursor:pointer;
+}
+
+/* TABLA */
+
+#resultado {
+  margin-bottom:32px;
+  max-width:800px;
+  margin:0 auto;
+}
+
+#resultado div {
+  padding:12px;
+  background:#fff;
+  transition:.2s all ease-in-out;
+  z-index:-1;
+  border-radius:8px;
+}
+
+#resultado div:hover {
+  transform:scale(1.1);
+  box-shadow:0 4px 8px rgba(0,0,0,.1);
+  z-index:10;
+  border:#eee 1px solid;
+}
+
+#resultado div:hover hr { opacity:0; }
+
+#resultado div > span { text-align:right; opacity:.8; display:block; }
+
+#resultado div > p { color:#111; }
+
+#resultado div hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #eee;
+    margin:1em 0;
+    padding:0;
+}
+
+#ejemplo {
+  margin-bottom:32px;
+  max-width:900px;
+  margin:0 auto;
+  background:#eee;
+  border:#ccc 1px dotted;
+  padding:0 16px;
+  margin-top:24px;
+  color:#111;
+  border-radius:2px;
+  margin-bottom:32px;
+}
+
+/* INFO */
+.info {
+  margin:0 48px;
+  padding:24px;
+  background:#f3f4f5;
+  border:#c4c9cd 1px solid;
+  border-radius:4px;
+}
+
+.info h2 {
+  font-size:1.3rem;
+  margin-bottom:8px;
+}
