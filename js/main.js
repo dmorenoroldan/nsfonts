@@ -43,9 +43,12 @@ $('#calc').click(function() {
   var _valorfont = $("#fontsize").val();
   var fontsize = parseInt(_valorfont);
 
+  var _valoresc = $("#escala").val();
+  var escala = parseInt(_valoresc);
+
   var fuente = $("#fuente").val();
 
-  if (fontsize>0) {
+  if (fontsize>0 && escala>0) {
     $("#resultado").remove();
     $("#form").after("<div id='resultado'></div>");
 

@@ -101,13 +101,6 @@ form button:hover {
   border-radius:8px;
 }
 
-#resultado div:hover {
-  transform:scale(1.1);
-  box-shadow:0 4px 8px rgba(0,0,0,.1);
-  z-index:10;
-  border:#eee 1px solid;
-}
-
 #resultado div:hover hr { opacity:0; }
 
 #resultado div > span { text-align:right; opacity:.8; display:block; }
